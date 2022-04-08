@@ -4,7 +4,7 @@ Triple J radio show downloader
 Downloads radio programs from ABC (e.g. Triple J / Double J) and saves them in their native format (m4a)
 
 ## Requirements
-Testedwith Python 3.10.
+Tested with Python 3.10.
 
 1. Python 3 with requests (and optionally tenacity) installed. Call `pip3 install -r requirements.txt` while in this 
 directory to install.
