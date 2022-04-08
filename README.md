@@ -4,9 +4,9 @@ Triple J radio show downloader
 Downloads radio programs from ABC (e.g. Triple J / Double J) and saves them in their native format (m4a)
 
 ## Requirements
-(tested on Mac OS with Python 3.6 installed with [brew](https://brew.sh))
+Testedwith Python 3.10.
 
-1. Python3 with requests (and optionally tenacity) installed. Call `pip3 install -r requirements.txt` while in this 
+1. Python 3 with requests (and optionally tenacity) installed. Call `pip3 install -r requirements.txt` while in this 
 directory to install.
 1. ffmpeg installed and available in your system PATH
 
@@ -42,11 +42,11 @@ optional arguments:
 ```
 
 ### Example
-Download the 5-18-18 episode of Friday Night Shuffle by url:
+Download the 2022-04-08 episode of Good Nights by url:
 
-`./abc_dl.py http://www.abc.net.au/triplej/programs/friday-night-shuffle/friday-night-shuffle/9755372`
+`./abc_dl.py https://www.abc.net.au/triplej/programs/good-nights/good-nights/13824138`
 
 Downloading the same episode without a URL is possible by providing the show string (fns) and date.
 We can skip passing in the minutes for the show (60*3 = 180) since that's the default value:
 
-`./abc_dl.py -s fns -d 2018-05-18`
+`./abc_dl.py -s jgn -d 2022-04-08 -m 120`
